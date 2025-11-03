@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body{
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    background-color: #659d67;
+    color:#333;
+    padding:0; 
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline; /* optional */
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 0.5rem;
+}
+header p{
+    font-size: 1.5rem; /* Adjusted from 50px */
+    font-family: cursive;
+}
+header{
+    background:#4CAF50;
+    color:#fff;
+    padding: 30px;
+    text-align:center;
+    font-size: 1.5rem; /* Adjusted from 30px */
+    margin: 40px 20px;
+    border-radius: 25px; /* Adjusted from 50px */
+    box-shadow: 10px 10px 15px #3d7b3f; /* Softened shadow */
+    width: 90%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:fit-content ;
+    font-size: 1.2rem; /* Adjusted from 30px */
+    align-items: center;
+    padding: 25px;
+    margin: 15px 0;
+    background:#fff;
+    border-radius: 15px; /* Adjusted from 8px */
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    flex-grow: 1; /* Allow sections to grow and fill available space */
+}
+h2{
+    margin-top:0;
+    font-size: 2rem; /* Adjusted from inherited size */
+    margin-bottom: 1rem;
+}
+.skills span{
+    display:inline-block;
+    background:#e0e0e0;
+    font-size: 1rem; /* Adjusted from 30px */
+    padding: 8px 16px; /* Adjusted padding */
+    margin:5px;
+    border-radius:4px;
+}
+.projects ul{
+    list-style-type:square;
+    padding-left: 40px; /* Increased padding for better alignment */
+    text-align: left;
+    width: 100%;
+}
+footer{
+    font-size: 1rem; /* Adjusted from 30px */
+    width: 100%;
+    text-align:center;
+    padding: 20px 0;
+    background:#333;
+    color:#fff;
+    margin-top:20px;
+}
+#main1, #main2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch; /* Stretch items to fill the column */
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.about, .skills, .projects, .contact {
+    
+    border-radius: 15px; /* Adjusted from 50px */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15); /* Adjusted shadow */
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Make columns equal height */
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+    #main1, #main2 {
+        width: 50%;
+    }
+}
+  
